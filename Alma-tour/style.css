@@ -1,0 +1,679 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo&family=Kameron:wght@400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arimo&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kameron:wght@400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 999;
+    background-color: transparent;
+    font-family: "Josefin Sans";
+    gap: 200px;
+    padding: 45px 0;
+}
+
+.header a {
+    color: #b6b6b6;
+    font-size: 22px;
+    font-weight: medium;
+    text-decoration: none;
+
+    transition: 300ms;
+}
+
+/* .header a:hover {
+    transform: scale(1.03);
+    transition: 300ms;
+    text-decoration: underline;
+    cursor: pointer;
+} */
+
+.urls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    border: 2px solid #b6b6b6;
+    border-radius: 100px;
+    width: 1150px;
+    height: 77px;
+}
+
+.home {
+    min-height: 100vh;
+    background: linear-gradient(rgba(0,0,0,50%), rgba(0,0,0,50%)), url('./img/background1.png');
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.home-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.title {
+    color: #11A116;
+    text-shadow: 1px 1px 2px black;
+    font-size: 80px;
+    font-family: "Kameron";
+    font-weight: 600;
+}
+
+.text {
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.sub-title {
+    color: #ffffff;
+    font-family: "Kameron";
+    font-size: 55px;
+    font-weight: 600;
+    margin: 0 150px 0;
+}
+
+.info {
+    color: #ffffff;
+    font-family: "Josefin Sans";
+    font-size: 50px;
+    font-weight: 400;
+    margin: 0 150px 0;
+}
+
+.highlights {
+    min-height: 100vh;
+    background: linear-gradient(rgba(0,0,0,50%), rgba(0,0,0,50%)), url(img/Background2.png);
+    display: flex;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.hl-container {
+    min-height: 100vh;
+    min-width: 110vh;
+    background: linear-gradient(to right, rgba(14, 54, 0, 100%), rgba(14,54,0,85%));
+    clip-path: polygon(0 0, 85% 0, 60% 50%, 85% 100%, 0 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.list {
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    gap: 50px;
+    color: #ffffff;
+    font-size: 40px;
+    font-family: "Josefin Sans";
+    margin: 0 150px;
+}
+
+.choose {
+    min-height: 100vh;
+    background: linear-gradient(rgba(0,0,0,50%), rgba(0,0,0,50%)), url(img/Background3.png);
+    display: flex;
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: right;
+}
+
+.choose-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 100px;
+    min-height: 100vh;
+    min-width: 100vh;
+    background: linear-gradient(to left, rgba(14, 54, 0, 100%), rgba(14,54,0,85%));
+    clip-path: polygon(20% 0, 100% 0, 100% 100%, 20% 100%, 0 50%);
+}
+
+.ch-title {
+    color: #11A116;
+    text-shadow: 1px 1px 2px black;
+    font-size: 80px;
+    font-family: "Kameron";
+    font-weight: 600;
+    display: flex;
+    justify-content: right;
+    padding: 0 200px 0;
+}
+
+.ch-text {
+    color: #ffffff;
+    font-size: 60px;
+    font-weight: 400;
+    font-family: "Josefin Sans";
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+}
+.grid-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+}
+#one {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('./img/Summer.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    }
+#two {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('./img/Winter.png');
+    background-size: cover;
+    background-position: center;
+}
+#three {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('./img/Autumn.png');
+    background-size: cover;
+    background-position: center;   
+}
+#four {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('./img/Spring.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.seas-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.season {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.seas-list {
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    gap: 20px;
+    color: #ffffff;
+    font-size: 30px;
+    font-family: "Josefin Sans";
+    text-align: center;
+    margin: 0 150px;
+}
+
+.second-title {
+    color: #ffffff;
+    font-size: 70px;
+    font-family: "Kameron";
+    font-weight: 600;
+    text-shadow: 1px 1px 2px black;
+}
+
+.book {
+    min-height: 100vh;
+    background: linear-gradient(rgba(0,0,0, 50%), rgba(0,0,0, 50%)), url(img/Rectangle\ 26.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.book-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.book-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 10px;
+    width: 450px;
+    height: 110px;
+    border: 3px solid #ffffff;
+    border-radius: 100px;
+    background: transparent;
+    color: #ffffff;
+    font-size: 48px;
+    font-weight: 600;
+    font-family: "Kameron";
+
+    transition: 300ms;
+}
+
+.book-button:hover {
+    cursor: pointer;
+    background: #ffffff;
+    color: #312D2D;
+    transform: scale(1.02);
+    mix-blend-mode: hard-light;
+
+    transition: 300ms;
+}
+
+.socials {
+    min-height: 100vh;
+    background: #312D2D;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 300px;
+}
+
+.media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.sc-text {
+    color: #ffffff;
+    font-size: 35px;
+    font-family: "Kameron";
+}
+
+.social-media {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.footer {
+    min-height: 80vh;
+    background: linear-gradient(rgba(44,88,28,1), rgba(14,54,0,1));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 55px;
+}
+
+.more-about-company {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 60px;
+    color: #ffffff;
+    font-family: "Josefin Sans";
+    font-size: 24px;
+    font-weight: 100;
+}
+
+.footer-btn {
+    background: transparent;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    font-family: "Josefin Sans";
+    font-size: 24px;
+    font-weight: 500;
+    padding: 15px 40px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.Company-inf {
+    color: #ffffff;
+    font-family: "Josefin Sans";
+    font-size: 18px;
+    text-align: center;
+}
+
+.loc {
+    width: 80vw;
+    height: 50vh;
+}
+
+@media(max-width: 376px) {
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        max-width: 80%;
+        margin-top: 40px;
+        padding-left: 15px;
+        gap: 5px;
+    }
+
+    .logo {
+        width: 30%;
+        height: 30%;
+        object-fit: contain;
+    }
+
+    .urls {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        border: none;
+        gap: 25px;
+    }
+
+    .url {
+        border: 1px solid #b6b6b6;
+        border-radius: 10px;
+        min-width: 100%;
+        text-align: center;
+        background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255,255,255, 0.2));
+    }
+
+    .home {
+        max-width: 100vh;
+        min-height: 80vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .home-container {
+        max-width: 100vh;
+        min-height: 40vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: 150px 20px 0px 20px;
+        padding: 0px 20px 0px 20px;
+        gap: 10px;
+    }
+
+    .title, .ch-title, .second-title {
+        max-width: 100%;
+        font-size: 28px;
+    }
+
+    .text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 15px;
+        min-width: 100%;
+    }
+
+    .sub-title {
+        max-width: 100%;
+        font-size: 16px;
+        min-width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .info {
+        max-width: 100%;
+        font-size: 14px;
+        min-width: 80%;
+        display: flex;
+        text-align: center;
+    }
+
+    .highlights {
+        max-width: 100vh;
+        min-height: 80vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-size: cover;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hl-container {
+        max-width: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: 0px 20px 0px 20px;
+        padding: 0px 20px 0px 20px;
+        gap: 35px;
+        background: transparent;
+    }
+
+    .list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        font-size: 30px;
+        gap: 20px;
+    }
+
+    .choose {
+        max-width: 100vh;
+        min-height: 80vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-size: cover;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .choose-container {
+        max-width: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: 0px 20px 0px 20px;
+        padding: 0px 20px 0px 20px;
+        gap: 35px;
+        background: transparent;
+    }
+
+    .ch-text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 15px;
+        min-width: 100%;
+        font-size: 24px;
+    }
+
+    .seasons {
+        max-width: 100vh;
+        min-height: 80vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-size: cover;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .grid-container {
+        max-width: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: 0px 20px 0px 20px;
+        padding: 0px 20px 0px 20px;
+    }
+
+    .grid-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .seas-list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        font-size: 24px;
+        gap: 15px;
+        min-width: 60%;
+    }
+
+    .book {
+        max-width: 100vh;
+        min-height: 80vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-size: cover;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .book-container {
+        max-width: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0px 20px 0px 20px;
+        gap: 15px;
+    }
+
+    .book-button {
+        width: 100%;
+        height: 100%;
+        font-size: 32px;
+        font-weight: 500;
+    }
+
+    .socials {
+        max-width: 100vh;
+        min-height: 80vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-size: cover;
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+
+    .media {
+        max-width: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        gap: 15px;
+    }
+
+    .video {
+        width: 276px;
+        height: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        min-height: 50vh;
+    }
+
+    .more-about-company {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        gap: 15px;
+        max-width: 100%;
+        font-size: 18px;
+    }
+
+    .social-media {
+        border: 1px solid #b6b6b6;
+        border-radius: 10px;
+        max-width: 90px;
+        max-height: 150px;
+        font-size: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 5px;
+        background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255,255,255, 0.2));
+    }
+
+    .sc-img {
+        max-width: 70%;
+        max-height: 70%;
+    }
+
+    .sc-text {
+        max-width: 100%;
+        max-height: 100%;
+        font-size: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+}
